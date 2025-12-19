@@ -27,7 +27,7 @@ export const Usercontext = createContext()
 
 function App() {
 
-  console.log("ENV URL:", import.meta.env.VITE_API_URL);
+  console.log("ENV URL:", FETCH_URL);
   const [user, setUser] = useState("") //global user logged data
   const [isOtpVerified, setIsOtpVerified] = useState(false)
   const [loading, setLoading] = useState(true)
