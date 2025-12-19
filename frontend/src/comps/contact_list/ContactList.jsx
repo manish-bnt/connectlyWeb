@@ -3,7 +3,7 @@ import { toProperCase } from '../../utility/utility'
 import { Link, useNavigate } from 'react-router-dom'
 import { deleteContact } from '../../api/api'
 import { Usercontext } from '../../App'
-import Contact from './contact'
+import Contact from './Contact'
 
 export default function ContactList({ user }) {
 
@@ -31,3 +31,4 @@ export default function ContactList({ user }) {
     </div>
   )
 }
+
