@@ -1,0 +1,24 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background-color: #f0fdf4;
+  padding: 0 24px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 120px;
+}
+
+.navbar-right {
+  position: relative;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}

@@ -1,0 +1,75 @@
+.user-account-container {
+  height: 90vh;
+}
+
+.account-left {
+  width: 60%;
+}
+
+.account-left-head {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+
+.account-right-head {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+.setting-icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.account-right {
+  width: 40%;
+  padding: 1rem;
+}
+
+.account-user-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.5rem;
+}
+
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  /* background-color: pink; */
+}
+
+.email-input {
+  height: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #333;
+}
+
+@media screen and (max-width:1024px) {
+  .user-account-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .account-right {
+    order: 1;
+    height: 50vh;
+    margin-top: 1rem;
+  }
+
+  .account-left {
+    height: 50vh;
+    order: 2;
+  }
+
+  .account-right,
+  .account-left {
+    width: 100%;
+  }
+
+}
