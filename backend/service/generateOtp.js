@@ -8,7 +8,7 @@ async function generateAndSendOtp(email, purpose) {
   const otp = Math.floor(10000 + Math.random() * 90000)
 
   await transporter.sendMail({
-    from: process.env.EMAIL,
+    from: process.env.EMAIL_USER,
     to: email,
     subject: '[Connectly] OTP Verification',
     html: `<p>Your OTP is <strong>${otp}</strong></p>`
@@ -25,3 +25,4 @@ async function generateAndSendOtp(email, purpose) {
 }
 
 module.exports = { generateAndSendOtp }
+
