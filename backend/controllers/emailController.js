@@ -9,7 +9,7 @@ async function sendWelcomeEmail(email, username) {
 
   //write an email
   const mailOptions = {
-    from: process.env.EMAIL,
+    from: process.env.EMAIL_USER,
     to: email,
     subject: "Welcome to Our Platform!",
     html: `
@@ -62,5 +62,6 @@ async function requestOtp(req, res) {
     data: otpDoc
   })
 }
+
 
 module.exports = { sendWelcomeEmail, requestOtp }
