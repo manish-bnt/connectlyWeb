@@ -5,7 +5,15 @@ const app = express()
 const path = require('path')
 const cors = require('cors')
 let PORT = process.env.PORT || 5001
-app.use(cors())
+app.use(cors({
+  origin: [
+    "https://connectly-web.netlify.app",
+    "http://localhost:5173"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}))
 app.use(express.json())
 app.use('/', require("./routes/router.js"))
 app.use('/auth', require("./routes/authRoutes.js"))
@@ -19,6 +27,7 @@ mongoose.connect(process.env.DB_URL)
     app.listen(PORT, () => console.log(`server is running... https://localhost:${PORT}`))
   })
   .catch(err => console.error(err.message))
+
 
 
 
