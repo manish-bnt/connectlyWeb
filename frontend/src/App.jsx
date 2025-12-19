@@ -27,7 +27,7 @@ export const Usercontext = createContext()
 
 function App() {
 
-  console.log("ENV URL:", FETCH_URL);
+  
   const [user, setUser] = useState("") //global user logged data
   const [isOtpVerified, setIsOtpVerified] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -77,6 +77,8 @@ function App() {
     await loadUser()
     navigate('/')
   }
+
+  console.log("ENV URL:", FETCH_URL);
 
 
   const router = createBrowserRouter([
