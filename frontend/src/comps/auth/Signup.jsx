@@ -54,31 +54,42 @@ export default function Signup() {
 
 
   return (
-    <form className='auth-form flex flex-col gap-md box-grey-shadow' onSubmit={signupHandler} >
-      <h1 className='auth-head'>Create Your Account!</h1>
-
-      <input type="text"
-        name='username'
-        value={formData.username}
-        onChange={inputHandler}
-        placeholder='Username' />
-
-      <input type="email"
-        name='email'
-        value={formData.email}
-        onChange={inputHandler}
-        placeholder='Enter email' />
-
-      <input type="password"
-        name='password'
-        value={formData.password}
-        onChange={inputHandler}
-        placeholder='Enter Password' />
-      <Link style={{ color: "#4169E1", textDecoration: 'none' }} to={'/signin'}>Already have an account</Link>
-
-      <div className="auth-form-cta">
-        <Button variant="signup" type="submit">Signup</Button>
+    <>
+      <div className="info-message" style={{
+        backgroundColor: '#fff3cd',
+        color: '#856404',
+        padding: '10px 15px',
+        border: '1px solid #ffeeba',
+        textAlign: 'center'
+      }}>
+        Signup may take time because data comes from render and it takes a while.
       </div>
-    </form>
+      <form className='auth-form flex flex-col gap-md box-grey-shadow' onSubmit={signupHandler} >
+        <h1 className='auth-head'>Create Your Account!</h1>
+
+        <input type="text"
+          name='username'
+          value={formData.username}
+          onChange={inputHandler}
+          placeholder='Username' />
+
+        <input type="email"
+          name='email'
+          value={formData.email}
+          onChange={inputHandler}
+          placeholder='Enter email' />
+
+        <input type="password"
+          name='password'
+          value={formData.password}
+          onChange={inputHandler}
+          placeholder='Enter Password' />
+        <Link style={{ color: "#4169E1", textDecoration: 'none' }} to={'/signin'}>Already have an account</Link>
+
+        <div className="auth-form-cta">
+          <Button variant="signup" type="submit">Signup</Button>
+        </div>
+      </form>
+    </>
   )
 }
