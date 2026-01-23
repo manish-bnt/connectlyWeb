@@ -1,0 +1,91 @@
+.profile-container {
+  height: 90vh;
+}
+
+/* Left section */
+.profile-left {
+  width: 40%;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.user-icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.pencil-icon {
+  font-size: 1.25rem;
+}
+
+.profile-head {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+
+/* Right section */
+.profile-right {
+  width: 60%;
+  padding: 2.5rem;
+
+}
+
+.profile-avatar {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+.add-profile-icon {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: grey;
+  border: 7px solid #fff;
+  color: #e8ebeb;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.profile-info-wrap {
+  width: 100%;
+  max-width: 400px;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-info p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width:1024px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-left {
+    order: 1;
+    margin-bottom: 2rem;
+    /* min-height: 50vh; */
+  }
+
+  .profile-right {
+    order: 2;
+    min-height: 50vh;
+  }
+
+  .profile-left,
+  .profile-right {
+    width: 100%;
+  }
+}

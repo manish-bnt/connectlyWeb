@@ -1,0 +1,47 @@
+.dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 220px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 0.8rem;
+}
+
+.dropdown-header {
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.email {
+  font-size: 13px;
+  color: gray;
+}
+
+.link-style {
+  text-decoration: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000;
+}
+
+.link-style:hover {
+  background-color: #f1f5f9;
+}
+
+.logout {
+  color: red;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout:hover {
+  /* background-color: #065f46; */
+  background-color: #4169E1;
+  color: #fff;
+}

@@ -1,0 +1,33 @@
+.auth-form {
+  position: absolute;
+  width: 100%;
+  max-width: 425px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 0.875rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.auth-head {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.auth-form input {
+  height: 3rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width:468px) {
+  .auth-form {
+    width: 90%;
+  }
+}

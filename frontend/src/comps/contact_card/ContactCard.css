@@ -1,0 +1,66 @@
+.contact-card-container {
+  /* width: 100%; */
+  /* min-width: fit-content; */
+  height: 90vh;
+}
+
+/* Left  */
+.left-contact-card-sec {
+  width: 60%;
+}
+
+.right-contact-card-sec {
+  width: 40%;
+  padding: 1rem;
+}
+
+/* Card  */
+
+.contact-card {
+  width: 100%;
+  max-width: 425px;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Profile  */
+
+.contact-card-profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+
+.contact-card-head {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width:1024px) {
+  .contact-card-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .right-contact-card-sec {
+    order: 1;
+    height: 50vh;
+  }
+
+  .left-contact-card-sec {
+    height: 50vh;
+    order: 2;
+  }
+
+  .right-contact-card-sec,
+  .left-contact-card-sec {
+    width: 100%;
+  }
+
+}

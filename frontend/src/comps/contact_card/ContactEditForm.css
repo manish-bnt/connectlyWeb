@@ -1,0 +1,72 @@
+.editContact-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.editContact-user-left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.edit-contact-form {
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem 0.875rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.editContact-user-right {
+  width: 60%;
+  height: 100%;
+}
+
+.edit-contact-head {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.editContact-user-head {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.edit-contact-form input {
+  height: 2.5rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  padding-left: 0.875rem;
+  font-size: 0.9rem;
+}
+
+.edit-contact-form button {
+  height: 2.5rem;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (max-width:768px) {
+  .editContact-wrapper {
+    flex-direction: column;
+  }
+
+  .editContact-user-left {
+    width: 100%;
+  }
+
+  .editContact-user-right {
+    width: 100%;
+  }
+
+  .edit-contact-form {
+    width: 90%;
+  }
+}

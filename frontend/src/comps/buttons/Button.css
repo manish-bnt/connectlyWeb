@@ -1,0 +1,36 @@
+.btn {
+  padding: 0.5rem 0.875rem;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-view,
+.btn-edit,
+.btn-save,
+.btn-signup,
+.btn-signin,
+.btn-auth {
+  background-color: #4169E1;
+}
+
+.btn-auth-disabled {
+  background-color: rgba(6, 95, 70, 0.8);
+}
+
+.btn-setting,
+.btn-back {
+  color: #000;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+}
+
+.btn-delete,
+.btn-cancel {
+  background-color: rgb(148, 9, 9);
+}

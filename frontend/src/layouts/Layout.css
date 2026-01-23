@@ -1,0 +1,29 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  height: calc(100vh - 80px);
+}
+
+.add-contact-div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.add-icon {
+  color: #f0fdf4;
+  font-size: 3rem;
+}

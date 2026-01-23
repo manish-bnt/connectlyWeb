@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  /* --fs-sm: clamp(0.8rem, 1vw, 1rem);
+  --fs-md: clamp(1rem, 1vw, 1.25rem);
+  --fs-lg: clamp(1.2rem, 2vw, 2rem);
+
+  --space-xs: clamp(0.4rem, 1vw, 0.8rem);
+  --space-sm: clamp(0.8rem, 1.5vw, 1.2rem);
+  --space-md: clamp(1rem, 2vw, 2rem);
+  --space-lg: clamp(2rem, 3vw, 3.5rem); */
+
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F3F5;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width:0px) and (max-width:768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (max-width:468px) {
+  html {
+    font-size: 12px;
+  }
+} */
